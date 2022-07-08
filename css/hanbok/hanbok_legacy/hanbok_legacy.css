@@ -78,6 +78,7 @@ body {
 }
 #hanbok_legacy > div:nth-child(2) #legacyMainContainer > ul > li {
   width: 30vw;
+  height: 723px;
   margin-right: 50px;
 }
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) {

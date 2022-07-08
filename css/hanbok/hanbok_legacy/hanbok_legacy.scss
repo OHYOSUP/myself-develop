@@ -1,4 +1,10 @@
-*{margin: 0; padding: 0; box-sizing: border-box;};
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+;
 
 
 @mixin flexCenter($justify, $align) {
@@ -27,7 +33,7 @@
   mix-blend-mode: overlay;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -61,7 +67,7 @@ body{
     height: 100vh;
     display: flex;
 
-    #legacyMainContainer{
+    #legacyMainContainer {
       width: 60vw;
       height: 70vh;
       @include flexCenter(flex-end, center);
@@ -69,25 +75,25 @@ body{
       position: relative;
       overflow: hidden;
 
-          &>ul{
-            width: 245vw;
-            height: 723px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            // border: 1px solid red;
-            /* margin : 50px; */
-            overflow: hidden;
-            transition: 0.5 ease-out;
+      &>ul {
+        width: 245vw;
+        height: 723px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        // border: 1px solid red;
+        /* margin : 50px; */
+        overflow: hidden;
+        transition: 0.5 ease-out;
 
-            display: flex;
-            // border: 1px salmon;
+        display: flex;
+        // border: 1px salmon;
 
-            &>li{
-              width: 30vw;
-              // height: 723px;
-              margin-right: 50px;
-            }
+        &>li {
+          width: 30vw;
+          height: 723px;
+          margin-right: 50px;
+        }
       }
     }
 
@@ -106,8 +112,6 @@ body{
         // border: 1px solid blue;
         font-size: 16px;
         line-height: 45px;
-        // border: 1px solid red;
-
       }
 
       &>div:nth-child(2) {
@@ -138,14 +142,14 @@ body{
           flex-direction: column;
 
           &>div:nth-child(1) {
-            cursor:default;
+            cursor: default;
             width: 5vw;
             height: 5vh;
             @include flexCenter(flex-start, center);
           }
 
           &>div:nth-child(2) {
-            cursor:default;
+            cursor: default;
             width: 5vw;
             height: 5vh;
             @include flexCenter(flex-end, center);
@@ -159,11 +163,13 @@ body{
     width: 640vw;
     background-color: #252525;
     opacity: 0;
+
     &>div:nth-child(1) {
       width: 600vw;
       height: 55vh;
       display: flex;
       overflow: hidden;
+
       &>div {
         // height: 60vh;
         margin-left: 10px;
@@ -173,57 +179,58 @@ body{
   }
 
 
-#legacy_des{
-  width: 100vw;
-  height: 100vh;
-  // border: 1px solid red;
-  // opacity: 0;
-  @include flexCenter(flex-start, center);
-  // background-color: #ccc;
-&>div:nth-child(1){
-  width: 50vw;
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-
-  &>div:nth-child(1){
-    width: 50vw;
-    height: 10vh;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 6px;
-  @include flexCenter(center, center);
-  }
-
-  &>div:nth-child(2){
-    width: 50vw;
-    height: 40vh;
-
-    @include flexCenter(center, center);
+  #legacy_des {
+    width: 100vw;
+    height: 100vh;
     // border: 1px solid red;
+    // opacity: 0;
+    @include flexCenter(flex-start, center);
 
-    &>div:nth-child(1){
-      width: 42vw;
-      height: 20vh;
-    @include flexCenter(center, center);
-    font-size: 0.8rem;
-    // border: 1px solid red;
-    color: #fff;
-    font-weight: 300;
-    flex-direction: column;
-    line-height: 35px;
+    // background-color: #ccc;
+    &>div:nth-child(1) {
+      width: 50vw;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+
+      &>div:nth-child(1) {
+        width: 50vw;
+        height: 10vh;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 6px;
+        @include flexCenter(center, center);
+      }
+
+      &>div:nth-child(2) {
+        width: 50vw;
+        height: 40vh;
+
+        @include flexCenter(center, center);
+        // border: 1px solid red;
+
+        &>div:nth-child(1) {
+          width: 42vw;
+          height: 20vh;
+          @include flexCenter(center, center);
+          font-size: 0.8rem;
+          // border: 1px solid red;
+          color: #fff;
+          font-weight: 300;
+          flex-direction: column;
+          line-height: 35px;
+        }
+      }
+    }
+
+    &>div:nth-child(2) {
+      width: 40vw;
+      height: 70vh;
+      @include flexCenter(center, center);
+
     }
   }
-}
-
-  &>div:nth-child(2){
-    width: 40vw;
-    height: 70vh;
-    @include flexCenter(center, center);
-
-  }
-}
 
 
 
@@ -295,10 +302,11 @@ body{
         width: 50vw;
         height: 60vh;
         @include flexCenter(center, center);
+
         // border: 1px solid red;
         &>div:nth-child(1) {
           // width: 50vw;
-        margin-left: 5vw;
+          margin-left: 5vw;
 
           // height: 50vh;
           // background-color: #ccc;
@@ -326,10 +334,15 @@ body{
           &>p {
             width: 25vw;
             opacity: 0;
-  
+
           }
         }
       }
     }
   }
 }
+
+
+
+
+

@@ -6,14 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/hanbok/hanbokCss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&family=Song+Myung&display=swap" rel="stylesheet">
+
   <title>Document</title>
 </head>
 
 <body>
   <div id="root">
     <div>
-      <div id="hourglass_top"></div>
-      <div id="hourglass_bottom"></div>
+      <div class="glassHour">
+        <img id="logo" src="/image/hanbok/hanbok_tradition/glasshour.svg" alt="">
+      </div>
     </div>
 
     <!-- <ul id="navi" >
@@ -52,21 +57,18 @@
     <div id="containerOne" class="container">
       <div>
         <div id="description_one">
-          <p>상박하후</p>
-          <p>ː 위는 얇고 아래는 두터운 형태를 뜻하는 말</p>
+          <div id="desTextOne">
+            <p>상박하후</p>
+            <p>ː 위는 얇고 아래는 두터운 형태를 뜻하는 말</p>
+          </div>
         </div>
-
         <div>
-          <div></div>
           <img src="/image/hanbok/hanbok_tradition/hanbok_tradition1.svg"
-          style="width: 40vw;" alt="">
+          style="width: 45vw;" alt="">
         </div>
-
       </div>
-
       <div>
-        
-        <img src="/image/hanbok/hanbok_tradition/hanbok_tradition2.svg"
+        <img src="/image/hanbok/hanbok_tradition/hanbok_tradition2.svg" style="width: 45vw;"
         alt="">
       </div>
     </div>
@@ -119,23 +121,23 @@
 
   <div id="hanbok_newWave_mainPage">
     <div>
-      <img src="/image/hanbok/hanbok_newWave/hanbok_newWave_main.svg" alt="">
+      <img class="newwaveMainImage" src="/image/hanbok/hanbok_newWave/hanbok_newWave_main.svg" alt="">
     </div>
 
-    <div id="newWave_textbox">
-      <div>
+    <div id="newwaveTextbox">
+      <div class="newwaveMainText">
         <p>WAVE</p>
       </div>
-      <div>
+      <div class="newwaveMainText">
         <p>NEW</p>
       </div>
-      <div>
+      <div class="newwaveMainText">
         <p>A</p>
       </div>
-      <div>
+      <div class="newwaveMainText">
         <p>NEW</p>
       </div>
-      <div>
+      <div class="newwaveMainText">
         <p>WAVE</p>
       </div>
     </div>
@@ -222,24 +224,24 @@
         <!-- <div> -->
           <!-- <div id="legacyLastPage_frameOne"> -->
             <ul class="slide">
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main1.svg" alt=""></li>
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main2.svg" alt=""></li>
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main3.svg" alt=""></li>
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main4.svg" alt=""></li>
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main5.svg" alt=""></li>
-              <li><img src="./image/hanbok/hanbok_legacy/lega_main6.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main1.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main2.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main3.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main4.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main5.svg" alt=""></li>
+              <li><img id="legacyMainImage" src="./image/hanbok/hanbok_legacy/lega_main6.svg" alt=""></li>
             </ul>
           <!-- </div>   -->
         <!-- </div> -->
       </div>
 
       <div>
-        <div>
+        <div class = "legacyMainText">
           <p>
             '한복이 아름답다는 것을 <br> 모두가 알았으면 좋겠다'
           </p>
         </div>
-        <div>
+        <div class = "legacyMainTextTwo">
           <span>이 생각이 컨텐츠 선정의 발단이었습니다. K-pop 무대, OTT 컨텐츠 등을 통해 한복이 주목을 받으면서 역시 내 눈에만 아름다워 보이는 것이 아니구나 라는 생각을 했습니다. 전통적인
             한복은 우아하고 풍성한 멋이 있고, 현대의 변화하는 한복은 실용적이면서 전통적인 멋을 품고 있습니다. 이런 한복이라는 한국 전통 의상이 세계적으로는 물론 국내에서도 사람들이 실생활에서 자주 입는
             옷이 되었으면 좋겠다는 생각에 한복이라는 컨텐츠를 선정하게 되었습니다. 한복은 한국 전통 의상으로서 단순히 입을것의 역할을 넘어 우리 민족의 정체성을 담고 있습니다. 위에서는 한복의 멋에

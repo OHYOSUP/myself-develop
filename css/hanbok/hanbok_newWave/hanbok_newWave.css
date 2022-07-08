@@ -32,7 +32,7 @@
   justify-content: center;
   align-items: center;
 }
-#hanbok_newWave_mainPage #newWave_textbox {
+#hanbok_newWave_mainPage #newwaveTextbox {
   width: 20vw;
   height: 50vh;
   position: absolute;
@@ -42,36 +42,15 @@
   flex-direction: column;
   color: #fff;
 }
-#hanbok_newWave_mainPage #newWave_textbox > div {
-  width: 20vw;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 600;
-}
-#hanbok_newWave_mainPage #newWave_textbox > div > p {
-  width: 20vw;
-  height: 10vh;
+#hanbok_newWave_mainPage #newwaveTextbox > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(1) > p {
-  letter-spacing: 46px;
-}
-#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(2) > p {
-  letter-spacing: 34px;
-}
-#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(3) > p {
-  letter-spacing: 34px;
-}
-#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(4) > p {
-  letter-spacing: 34px;
-}
-#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(5) > p {
-  letter-spacing: 38px;
+#hanbok_newWave_mainPage #newwaveTextbox > div > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #colorInNewwave {
@@ -82,6 +61,9 @@
   align-items: center;
   letter-spacing: 3px;
   color: #BB272D;
+}
+#colorInNewwave > h1 {
+  transform: scale(2.6, 8);
 }
 
 #newWave_color {
@@ -138,4 +120,40 @@
   width: 100vw;
   height: 300vh;
   background: linear-gradient(#ffffff, #252525);
+}
+
+@media (min-width: 1024px) {
+  .newwaveMainText {
+    font-size: 3rem;
+    letter-spacing: 46px;
+    font-weight: 600;
+    width: 20vw;
+    height: 10vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newwaveMainText {
+    font-size: 2rem;
+    letter-spacing: 26px;
+    font-weight: 600;
+    width: 20vw;
+    height: 6vh;
+  }
+
+  .newwaveMainImage {
+    width: 81vw;
+  }
+}
+@media (max-width: 767px) {
+  .newwaveMainText {
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+    font-weight: 600;
+  }
+
+  .newwaveMainImage {
+    width: 60vw;
+  }
 }/*# sourceMappingURL=hanbok_newWave.css.map */

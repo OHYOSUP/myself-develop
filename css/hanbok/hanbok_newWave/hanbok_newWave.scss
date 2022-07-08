@@ -39,7 +39,7 @@
   background-color: #565656;
   @include flexCenter(center, center);
 
-  #newWave_textbox {
+  #newwaveTextbox {
     width: 20vw;
     height: 50vh;
     // border: 1px  solid red;
@@ -49,38 +49,38 @@
     color: #fff;
 
     &>div {
-      width: 20vw;
-      height: 10vh;
+      // width: 20vw;
+      // height: 10vh;
       @include flexCenter(center, center);
-      font-size: 3rem;
-      font-weight: 600;
+      // font-size: 3rem;
+      // font-weight: 600;
 
       &>p {
-        width: 20vw;
-        height: 10vh;
+        // width: 20vw;
+        // height: 10vh;
         @include flexCenter(center, center);
       }
     }
 
-    &>div:nth-child(1)>p {
-      letter-spacing: 46px;
-    }
+    // &>div:nth-child(1)>p {
+    //   letter-spacing: 46px;
+    // }
 
-    &>div:nth-child(2)>p {
-      letter-spacing: 34px;
-    }
+    // &>div:nth-child(2)>p {
+    //   letter-spacing: 34px;
+    // }
 
-    &>div:nth-child(3)>p {
-      letter-spacing: 34px;
-    }
+    // &>div:nth-child(3)>p {
+    //   letter-spacing: 34px;
+    // }
 
-    &>div:nth-child(4)>p {
-      letter-spacing: 34px;
-    }
+    // &>div:nth-child(4)>p {
+    //   letter-spacing: 34px;
+    // }
 
-    &>div:nth-child(5)>p {
-      letter-spacing: 38px;
-    }
+    // &>div:nth-child(5)>p {
+    //   letter-spacing: 38px;
+    // }
   }
 }
 
@@ -88,9 +88,12 @@
   width: 100vw;
   height: 40vh;
   @include flexCenter(center, center);
-  // transform: scale(2.6, 8);
+
   letter-spacing: 3px;
   color: #BB272D;
+  &>h1{
+  transform: scale(2.6, 8);
+  }
 }
 
 #newWave_color {
@@ -158,3 +161,47 @@
   background: linear-gradient(#ffffff, #252525);
 }
 
+
+
+
+
+
+
+@media (min-width: 1024px){
+  .newwaveMainText{
+    font-size: 3rem;
+    letter-spacing: 46px;
+    font-weight: 600;
+    width: 20vw;
+    height: 10vh;
+}
+
+}
+
+@media (min-width: 768px) and (max-width : 1023px){
+
+  .newwaveMainText{
+      font-size: 2rem;
+      letter-spacing: 26px;
+      font-weight: 600;
+      width: 20vw;
+      height: 6vh;
+  }
+  .newwaveMainImage{
+  width: 81vw;
+  // height: 120vh;
+  }
+}
+
+@media (max-width: 767px){
+  .newwaveMainText{
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+    font-weight: 600;
+}
+.newwaveMainImage{
+  width: 60vw;
+  }
+}

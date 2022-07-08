@@ -20,35 +20,21 @@
   // background-image: url(/image/Toast\ Shiny\ Tulle\ Fabric\ 1.png);
   // background-size: cover;
   &>div:nth-child(1) {
-    width: 40vw;
+    width: 70vw;
     height: 100vh;
     // border: 1px solid red;  
-    @include flexCenter(center, center);
-    flex-direction: column;
+    @include flexCenter(center, flex-start);
     position: relative;
     z-index: 0;
     top: 10vh;
 
-    #hourglass_top {
-      width: 0px;
-      height: 0px;
-      border-bottom: 400px solid #dfb7a6;
-      border-left: 200px solid transparent;
-      border-right: 200px solid transparent;
-      transform: rotate(180deg);
-      position: absolute;
-      top: 2vh;
-    }
-
-    #hourglass_bottom {
-      width: 0px;
-      height: 0px;
-      border-bottom: 400px solid #dfb7a6;
-      border-left: 200px solid transparent;
-      border-right: 200px solid transparent;
+    &>div:nth-child(1){
+      width: 40vw;
+      height: 80vh;
+      // border: 1px solid red;  
+      @include flexCenter(center, center);
     }
   }
-
   // &>ul {
   //   width: 40vw;
   //   height: 5vh;
@@ -69,6 +55,14 @@
   // }
 }
 
+.glassHour ::before{
+  content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
+  background-color: #DA7F58;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 #title {
   width: 30vw;
   height: 20vh;
@@ -77,11 +71,13 @@
   flex-direction: column;
   position: absolute;
   left: 35vw;
+  // mix-blend-mode: screen;
 
   &>p {
     height: 7vh;
     font-size: 2.5rem;
     font-weight: 800;
+
   }
 }
 
@@ -96,11 +92,11 @@
     height: 100vh;
     display: flex;
     position: relative;
-    opacity: 0;
+    // opacity: 0;
     z-index: 0;
     // background-color: #ccc;
     @include flexCenter(center, center);
-    // border: 1px solid red;
+    // border: 2px solid red;
 
     &>div {
       width: 50vw;
@@ -117,37 +113,44 @@
       // border: 1px solid red;
 
       #description_one {
-        width: 20vw;
-        height: 10vh;
+        width: 10vw;
+        height: 60vh;
+        // border: 1px solid blue;
+        @include flexCenter(center, flex-end);
         position: absolute;
         bottom: 20vh;
-        left: 5vw;
+        left: 15vw;
+        &>div:nth-child(1){
+          width: 10vw;
+          height: 10vh;
+          // border: 1px solid blue;
+          font-family: 'Gowun Batang', serif;
 
-        // border: 1px solid blue;
-        &>p {
-          height: 4vh;
-          font-weight: 200;
-          // color: #868686;
+          &>p {
+            height: 4vh;
+            font-weight: 200;
+            // color: #868686;
+          }
         }
       }
 
       &>div:nth-child(2) {
-        width: 30vw;
-        height: 60vh;
+        width: 40vw;
+        height: 80vh;
         // background-color: #222;
 
-        @include flexCenter(center, flex-end);
+        @include flexCenter(center, center);
       }
     }
 
     &>div:nth-child(2) {
-      width: 30vw;
+      width: 35vw;
       // height: 80vh;
       @include flexCenter(center, center);
       // background-color: #ccc;
 
       &>div:nth-child(1) {
-        width: 35vw;
+        width: 40vw;
         height: 60vh;
         // background-color: #222;
 
@@ -200,7 +203,8 @@
     width: 100vw;
     height: 100vh;
     @include flexCenter(center, center);
-    opacity: 0;
+    // opacity: 0;
+    position: relative;
 
     &>div:nth-child(1) {
       width: 30vw;
@@ -209,13 +213,17 @@
     }
 
     #description_two {
-      width: 20vw;
-      position: absolute;
-      right: 20vw;
-      top: 325vh;
+      // width: 20vw;
+      // height: 10vh;
+      // position: absolute;
+      // right: 25vw;
+      // top: 55vh;
       text-align: right;
+      font-family: 'Gowun Batang', serif;
+      // border: 1px solid red;
 
       &>p {
+        width: 20vw;
         height: 4vh;
         font-weight: 500;
         line-height: 30px;
@@ -234,12 +242,13 @@
 
     // border: 1px solid red;
     #description_three {
-      width: 40vw;
-      font-weight: 540;
-      line-height: 30px;
-      position: absolute;
-      left: 14vw;
-      top: 30vh;
+      // width: 40vw;
+      // font-weight: 540;
+      // line-height: 30px;
+      // border: 1px solid red;
+
+      font-family: 'Gowun Batang', serif;
+
       // color: #868686;
     }
 
@@ -292,4 +301,100 @@
       }
     }
   }
+}
+
+
+
+
+@media (min-width: 1024px){
+  #logo{
+    width: 30vw;
+  }
+
+  #desTextOne{
+    position: absolute;
+    bottom: 12vh;
+    left: 1vw;
+  }
+  #description_two{
+    position: absolute;
+    top: 50vh;
+    right: 25vw;
+    font-size: 1rem;
+  }
+  #description_three{
+    width: 40vw;
+    height: 30vh;
+    font-size: 1rem;
+    // font-weight: 540;
+    line-height: 30px;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    font-family: 'Gowun Batang', seri
+  }
+}
+
+@media (min-width: 768px) and (max-width : 1023px){
+
+  #desTextOne{
+    position: absolute;
+    bottom: 15vh;
+    left: 1vw;
+    font-size: 0.7rem;
+  }
+
+  #description_two{
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 30vh;
+    right: 17vw;
+    font-size: 0.2rem;
+  }
+
+  #description_three{
+    width: 32vw;
+    height: 30vh;
+    font-size: 0.5rem;
+    // font-weight: 540;
+    line-height: 30px;
+    position: absolute;
+    left: 9vw;
+    top: 10vh;
+    font-family: 'Gowun Batang', seri
+  }
+
+}
+@media (max-width: 767px){
+
+  #desTextOne{
+    position: absolute;
+    bottom: 18vh;
+    left: 1vw;
+    font-size: 0.5px;
+  }
+  #description_two{
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+    font-size: 0.1px;
+    line-height: 0px;
+  }
+
+  #description_three{
+    width: 30vw;
+    height: 10vh;
+
+    font-size: 0.05px;
+    // font-weight: 540;
+    line-height: 30px;
+    position: absolute;
+    left: 3vw;
+    top: 4vh;
+    font-family: 'Gowun Batang', seri
+  }
+
 }
