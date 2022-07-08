@@ -17,6 +17,7 @@
   @include flexCenter(center, center);
   overflow: hidden;
   background-size: cover;
+
   // background-image: url(/image/Toast\ Shiny\ Tulle\ Fabric\ 1.png);
   // background-size: cover;
   &>div:nth-child(1) {
@@ -28,13 +29,14 @@
     z-index: 0;
     top: 10vh;
 
-    &>div:nth-child(1){
+    &>div:nth-child(1) {
       width: 40vw;
       height: 80vh;
       // border: 1px solid red;  
       @include flexCenter(center, center);
     }
   }
+
   // &>ul {
   //   width: 40vw;
   //   height: 5vh;
@@ -55,7 +57,7 @@
   // }
 }
 
-.glassHour ::before{
+.glassHour ::before {
   content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
   background-color: #DA7F58;
   position: absolute;
@@ -92,10 +94,10 @@
     height: 100vh;
     display: flex;
     position: relative;
-    // opacity: 0;
+    opacity: 0;
     z-index: 0;
     // background-color: #ccc;
-    @include flexCenter(center, center);
+    @include flexCenter(center, flex-end);
     // border: 2px solid red;
 
     &>div {
@@ -115,12 +117,14 @@
       #description_one {
         width: 10vw;
         height: 60vh;
+        // opacity: 0;
         // border: 1px solid blue;
         @include flexCenter(center, flex-end);
         position: absolute;
         bottom: 20vh;
         left: 15vw;
-        &>div:nth-child(1){
+
+        &>div:nth-child(1) {
           width: 10vw;
           height: 10vh;
           // border: 1px solid blue;
@@ -203,7 +207,7 @@
     width: 100vw;
     height: 100vh;
     @include flexCenter(center, center);
-    // opacity: 0;
+    opacity: 0;
     position: relative;
 
     &>div:nth-child(1) {
@@ -306,23 +310,25 @@
 
 
 
-@media (min-width: 1024px){
-  #logo{
+@media (min-width: 1024px) {
+  #logo {
     width: 30vw;
   }
 
-  #desTextOne{
+  #desTextOne {
     position: absolute;
     bottom: 12vh;
     left: 1vw;
   }
-  #description_two{
+
+  #description_two {
     position: absolute;
     top: 50vh;
     right: 25vw;
     font-size: 1rem;
   }
-  #description_three{
+
+  #description_three {
     width: 40vw;
     height: 30vh;
     font-size: 1rem;
@@ -335,16 +341,16 @@
   }
 }
 
-@media (min-width: 768px) and (max-width : 1023px){
+@media (min-width: 768px) and (max-width : 1023px) {
 
-  #desTextOne{
+  #desTextOne {
     position: absolute;
     bottom: 15vh;
     left: 1vw;
     font-size: 0.7rem;
   }
 
-  #description_two{
+  #description_two {
     width: 25vw;
     height: 25vh;
     position: absolute;
@@ -353,7 +359,7 @@
     font-size: 0.2rem;
   }
 
-  #description_three{
+  #description_three {
     width: 32vw;
     height: 30vh;
     font-size: 0.5rem;
@@ -366,15 +372,17 @@
   }
 
 }
-@media (max-width: 767px){
 
-  #desTextOne{
+@media (max-width: 767px) {
+
+  #desTextOne {
     position: absolute;
     bottom: 18vh;
     left: 1vw;
     font-size: 0.5px;
   }
-  #description_two{
+
+  #description_two {
     width: 25vw;
     height: 25vh;
     position: absolute;
@@ -384,7 +392,7 @@
     line-height: 0px;
   }
 
-  #description_three{
+  #description_three {
     width: 30vw;
     height: 10vh;
 

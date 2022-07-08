@@ -81,6 +81,8 @@ nextPage(root, 'wheel', containerOne);
 // scrollElemFadein(hanbok_tradition,"",containerTwo, 13);
 prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
 // prevPage(legacyAnchor, 'wheel', newWave_color);
+nextPage(newWave_color, 'wheel', legacyAnchor);
+// prevPage(legacyAnchor, 'wheel', newWave_color);
 
 
 // elementFade(hanbok_tradition);
@@ -119,6 +121,9 @@ function boxVisible() {
   containerArr[i].style.transition = '0.5s';
 }
 
+
+
+
 function boxInVisible() {
   containerArr[i].style.opacity = 0;
   containerArr[i].style.transition = '0.5s';
@@ -133,7 +138,6 @@ hanbok_tradition.addEventListener('wheel', function (e) {
       timer = null;
       if (e.deltaY > 0) {
         indexCheck();
-
         // console.log(e.deltaY);
         // console.log(i);
         nextPage(containerOne, 'wheel', containerTwo);
@@ -162,7 +166,6 @@ hanbok_tradition.addEventListener('wheel', function (e) {
         prevPage(containerThree, 'wheel', containerTwo);
         prevPage(containerFour, 'wheel', containerThree);
         // prevPage(legacyLastPage_frameOne, 'wheel', newWave_color);
-
         // boxInVisible(containerArr[i]);
       }
     }, 500);
