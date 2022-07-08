@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    #root{
+      width: 100vw;
+      height: 100vh;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    .container{
+      width: 80vw;
+      height: 80vh;
+      display: flex;
+
+    }
+    .container>div:nth-child(1){
+      width: 40vw;
+      height: 80vh;
+      background-color: rgb(184, 184, 184);
+    }
+
+    .container>div:nth-child(1)>div{
+      width: 40vw;
+      height: 13vh;
+      border: 1px solid red;  
+    }
+
+    .container>div:nth-child(2){
+      width: 40vw;
+      height: 80vh;
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <div id="containerSecond">
+        <div class="items" data-num="1">
+          <span>color1</span>
+        </div>
+        <div class="items" data-num="2">
+          <span >color2</span>
+        </div>
+        <div class="items" data-num="3">
+          <span>color3</span>
+        </div>
+        <div class="items" data-num="4">
+          <span>color4</span>
+        </div>
+        <div class="items" data-num="5">
+          <span>color5</span>
+        </div>
+        <div class="items" data-num="6">
+          <span>color6</span>
+        </div>
+      </div>
+
+      <div id="sectionTwo">
+        
+      </div>
+
+    </div>
+  </div>
+  <script src="./hanbokNewwave-imageChange.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container{
+      width: 532px;
+      height: 723px;
+      position: relative;
+      /* margin : 50px; */
+      overflow: hidden;
+      
+    }
+    .slide{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2500px;
+      transition: 0.5 ease-out;
+      display: flex;
+    }
+
+    .slide>li{
+      width: 532px;
+      height: 723px;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <ul class="slide">
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main1.svg" alt=""></li>
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main2.svg" alt=""></li>
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main3.svg" alt=""></li>
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main4.svg" alt=""></li>
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main5.svg" alt=""></li>
+      <li><img src="../image/hanbok/hanbok_legacy/lega_main6.svg" alt=""></li>
+    </ul>
+
+    <span class="prev">prev</span>
+    <span class="next">next</span>
+
+  </div>
+
+  <script src="./hanbok_legacy_mainPage_slide.js"></script>
+</body>
+</html>

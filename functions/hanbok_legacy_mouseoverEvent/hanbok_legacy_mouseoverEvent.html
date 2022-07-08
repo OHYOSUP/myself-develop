@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .text {
+      position: absolute;
+      bottom: -8vh;
+      display: flex;
+      flex-direction: column;
+      top: 50vh;
+      color: #fff;
+      mix-blend-mode: difference;
+      opacity: 0;
+    }
+
+    #root {
+      width: 100vw;
+      height: 200vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: 3rem;
+    }
+
+    .container {
+      margin-top: 20px;
+      width: 24vw;
+      height: 70vh;
+      background-color: rgb(146, 146, 146);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .frame {
+      width: 24vw;
+      height: 70vh;
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+
+    <div class="container">
+      <div class="frame">
+        <img src="/image/hanbok/hanbok_legacy/yugwansun.svg" id="photo">
+      </div>
+      <div>
+        <span class="text" id="nameText">Yu Gwansun</span>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="frame">
+        <img src="/image/hanbok/hanbok_legacy/parkjaehyeok.svg" id="photo">
+      </div>
+      <div>
+        <span class="text" id="nameText">Yu Gwansun</span>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="frame">
+        <img src="/image/hanbok/hanbok_legacy/parkyeol.svg" id="photo">
+      </div>
+      <div>
+        <span class="text" id="nameText">Yu Gwansun</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./hanbok_legacy_mouseoverEvent.js"></script>
+</body>
+
+</html>

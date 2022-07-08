@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter ($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212F51;
+
+  #title {
+    width: 100vw;
+    height: 40vh;
+    @include flexCenter(center, center);
+    color: #BC472C;
+    font-size: 3rem;
+  }
+
+  #subTitle {
+    width: 100vw;
+    height: 20vh;
+    @include flexCenter(center, center);
+    flex-direction: column;
+
+    &>p {
+      height: 6vh;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 6px;
+      color: #DBBA57;
+    }
+
+    &>p:nth-child(2) {
+      position: absolute;
+      // text-shadow: 0 0 10px #DBBA57, 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+      animation: textGlow 1s ease-in-out alternate;
+      animation-fill-mode: forwards;
+
+    }
+  }
+
+  #footer {
+    width: 100vw;
+    height: 40vh;
+
+    &>div:nth-child(1) {
+      width: 40vw;
+      height: 40vh;
+      @include flexCenter(center, center);
+      flex-direction: column;
+      // flex-direction: column;
+
+      #pilgrimageBox {
+        width: 30vw;
+        height: 10vh;
+
+        @include flexCenter(center, center);
+
+        &>div:nth-child(1) {
+          width: 10vw;
+          height: 10vh;
+          @include flexCenter(center, center);
+
+          #lightGroup {
+            width: 3vw;
+            height: 5vh;
+            display: flex;
+            flex-direction: column;
+            // position: relative;
+            opacity: 1;
+            transform: translate(rotate 45deg);
+
+            &>div:nth-child(1) {
+              width: 3vw;
+              height: 2.5vh;
+              display: flex;
+              justify-content: space-around;
+
+              &>div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 0 0 40px 20px #fff,
+                  0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
+                  0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+                // opacity: 0;
+
+              }
+            }
+
+            &>div:nth-child(2) {
+              width: 3vw;
+              height: 2.5vh;
+              display: flex;
+              justify-content: space-around;
+
+              &>div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 0 0 40px 20px #fff,
+                  0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
+                  0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+                // opacity: 0;
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(2) {
+          width: 20vw;
+          height: 10vh;
+          @include flexCenter(center, flex-start);
+          flex-direction: column;
+          color: #BA3737;
+          font-weight: 800;
+          font-size: 2rem;
+
+          &>p:nth-child(2) {
+            width: 10vw;
+            font-size: 1rem;
+            font-weight: 300;
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
+      }
+
+      #hanbokBox {
+        width: 30vw;
+        height: 10vh;
+
+        @include flexCenter(center, center);
+
+        &>div:nth-child(1) {
+          width: 10vw;
+          height: 10vh;
+          @include flexCenter(center, center);
+
+          #lightGroup_hanbok {
+            width: 3vw;
+            height: 5vh;
+            display: flex;
+            flex-direction: column;
+            // position: relative;
+            opacity: 1;
+            transform: translate(rotate 45deg);
+
+            &>div:nth-child(1) {
+              width: 3vw;
+              height: 2.5vh;
+              display: flex;
+              justify-content: space-around;
+
+              &>div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 0 0 40px 20px #fff,
+                  0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
+                  0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+                // opacity: 0;
+
+              }
+            }
+
+            &>div:nth-child(2) {
+              width: 3vw;
+              height: 2.5vh;
+              display: flex;
+              justify-content: space-around;
+
+              &>div {
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 0 0 40px 20px #fff,
+                  0 0 70px 40px rgba($color: #FFFD17, $alpha: 0.1),
+                  0 0 100px 60px rgba($color: #FF9C0A, $alpha: 0.1);
+                // opacity: 0;
+              }
+            }
+          }
+        }
+
+        &>div:nth-child(2) {
+          width: 20vw;
+          height: 10vh;
+          @include flexCenter(center, flex-start);
+          flex-direction: column;
+          color: #F0F0F0;
+          font-weight: 800;
+          font-size: 2rem;
+
+          &>p:nth-child(2) {
+            width: 15vw;
+            font-size: 1rem;
+            font-weight: 300;
+            display: flex;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #3d3b35, 0 0 20px #5e5a4f, 0 0 30px #55534d, 0 0 40px #1b1a17;
+  }
+
+  25% {
+    text-shadow: 0 0 10px #DBBA57, 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px rgb(158, 134, 68), 0 0 20px #b9931f, 0 0 30px #917a37;
+  }
+
+  75% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57, 0 0 30px #DBBA57;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+}

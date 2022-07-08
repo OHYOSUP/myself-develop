@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+.colorName {
+  width: 15vw;
+  height: 15vh;
+  @include flexCenter(flex-start, center);
+  // transform: scale(1.5, 1.5);
+  font-weight: 1000;
+  font-size: 3rem;
+  // color: #fff;
+  mix-blend-mode: overlay;
+}
+
+.colorDescription {
+  width: 36vw;
+  height: 2vh;
+  @include flexCenter(flex-end, center);
+  font-weight: 600;
+  mix-blend-mode: overlay;
+}
+
+
+
+
+
+#hanbok_newWave_mainPage {
+  width: 100vw;
+  background-color: #565656;
+  @include flexCenter(center, center);
+
+  #newWave_textbox {
+    width: 20vw;
+    height: 50vh;
+    // border: 1px  solid red;
+    position: absolute;
+    @include flexCenter(center, center);
+    flex-direction: column;
+    color: #fff;
+
+    &>div {
+      width: 20vw;
+      height: 10vh;
+      @include flexCenter(center, center);
+      font-size: 3rem;
+      font-weight: 600;
+
+      &>p {
+        width: 20vw;
+        height: 10vh;
+        @include flexCenter(center, center);
+      }
+    }
+
+    &>div:nth-child(1)>p {
+      letter-spacing: 46px;
+    }
+
+    &>div:nth-child(2)>p {
+      letter-spacing: 34px;
+    }
+
+    &>div:nth-child(3)>p {
+      letter-spacing: 34px;
+    }
+
+    &>div:nth-child(4)>p {
+      letter-spacing: 34px;
+    }
+
+    &>div:nth-child(5)>p {
+      letter-spacing: 38px;
+    }
+  }
+}
+
+#colorInNewwave {
+  width: 100vw;
+  height: 40vh;
+  @include flexCenter(center, center);
+  // transform: scale(2.6, 8);
+  letter-spacing: 3px;
+  color: #BB272D;
+}
+
+#newWave_color {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  @include flexCenter(center, center);
+
+  // border: 3px solid yellow;
+  &>div:nth-child(1) {
+    width: 45vw;
+    height: 90vh;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+
+    &>div {
+      width: 45vw;
+      height: 15vh;
+      @include flexCenter(flex-start, center);
+      flex-direction: column;
+
+      &>div:nth-child(1){
+        font-size: 3.5rem;
+      }
+    }
+
+    &>div:nth-child(1) {
+      background-color: #BB272D;
+    }
+
+    &>div:nth-child(2) {
+      background-color: #E3DDCB;
+    }
+
+    &>div:nth-child(3) {
+      background-color: #3E465B;
+    }
+
+    &>div:nth-child(4) {
+      background-color: #245441;
+    }
+
+    &>div:nth-child(5) {
+      background-color: #6D1B43;
+    }
+
+    &>div:nth-child(6) {
+      background-color: #161616;
+    }
+  }
+
+  #colorImage {
+    width: 40vw;
+    height: 90vh;
+    // background-color: #ccc;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+}
+
+#newWave_linearBgc {
+  width: 100vw;
+  height: 300vh;
+  background: linear-gradient(#ffffff, #252525);
+}
+

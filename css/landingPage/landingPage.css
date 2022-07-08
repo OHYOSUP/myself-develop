@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: #212F51;
+}
+#root #title {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BC472C;
+  font-size: 3rem;
+}
+#root #subTitle {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#root #subTitle > p {
+  height: 6vh;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #DBBA57;
+}
+#root #subTitle > p:nth-child(2) {
+  position: absolute;
+  -webkit-animation: textGlow 1s ease-in-out alternate;
+          animation: textGlow 1s ease-in-out alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#root #footer {
+  width: 100vw;
+  height: 40vh;
+}
+#root #footer > div:nth-child(1) {
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup {
+  width: 3vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translate(rotate 45deg);
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup > div:nth-child(1) {
+  width: 3vw;
+  height: 2.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup > div:nth-child(1) > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup > div:nth-child(2) {
+  width: 3vw;
+  height: 2.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup > div:nth-child(2) > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(2) {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #BA3737;
+  font-weight: 800;
+  font-size: 2rem;
+}
+#root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(2) > p:nth-child(2) {
+  width: 10vw;
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
+}
+#root #footer > div:nth-child(1) #hanbokBox {
+  width: 30vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok {
+  width: 3vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translate(rotate 45deg);
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok > div:nth-child(1) {
+  width: 3vw;
+  height: 2.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok > div:nth-child(1) > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok > div:nth-child(2) {
+  width: 3vw;
+  height: 2.5vh;
+  display: flex;
+  justify-content: space-around;
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok > div:nth-child(2) > div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(2) {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #F0F0F0;
+  font-weight: 800;
+  font-size: 2rem;
+}
+#root #footer > div:nth-child(1) #hanbokBox > div:nth-child(2) > p:nth-child(2) {
+  width: 15vw;
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start;
+}
+
+@-webkit-keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #3d3b35, 0 0 20px #5e5a4f, 0 0 30px #55534d, 0 0 40px #1b1a17;
+  }
+  25% {
+    text-shadow: 0 0 10px #DBBA57, 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+  50% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px rgb(158, 134, 68), 0 0 20px #b9931f, 0 0 30px #917a37;
+  }
+  75% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57, 0 0 30px #DBBA57;
+  }
+  100% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #3d3b35, 0 0 20px #5e5a4f, 0 0 30px #55534d, 0 0 40px #1b1a17;
+  }
+  25% {
+    text-shadow: 0 0 10px #DBBA57, 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+  50% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px rgb(158, 134, 68), 0 0 20px #b9931f, 0 0 30px #917a37;
+  }
+  75% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57, 0 0 30px #DBBA57;
+  }
+  100% {
+    text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
+  }
+}/*# sourceMappingURL=landingPage.css.map */

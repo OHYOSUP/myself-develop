@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 600vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    #root>div{
+      width: 30vw;
+      height: 30vw;
+      background-color: #ccc;
+      margin-top: 15vh;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="box"></div>
+    <div id="box"></div>
+    <div id="box"></div>
+    <div id="box"></div>
+    <div id="box"></div>
+    <div id="box"></div>
+  </div>
+
+</body>
+
+<script>
+
+const root = document.getElementById('root');
+const box = document.querySelectorAll('#box');
+
+const boxArr = Array.from(box);
+
+console.log(boxArr);
+
+// let index = -1;
+let  i = -1;
+
+function indexCheck(){
+  // index++;
+  i++;
+  if(i >= 5){
+    i=5;
+  }
+  console.log(i);
+}
+
+
+function boxVisible(){
+boxArr[i].style.opacity = 1;
+boxArr[i].style.transition = '0.5s';
+
+}
+
+function nextElem(){
+  boxArr[i].scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}
+
+
+let timer;
+
+root.addEventListener('wheel', function (e) {
+  if (!timer) {
+    timer = setTimeout(function() {
+      timer = null;
+      indexCheck();
+      if(e.deltaY > 0){
+        // i++;
+        nextElem(boxArr[i]);
+        boxVisible(boxArr[i]);
+      }
+    }, 400);
+  }
+  if (!timer) {
+    timer = setTimeout(function() {
+      timer = null;
+      indexCheck();
+      if(e.deltaY < 0){
+        i--;
+        nextElem(boxArr[i]);
+        boxVisible(boxArr[i]);
+      }
+    }, 400);
+  }
+});
+
+// root.addEventListener('wheel', function (e) {
+//   if (!timer) {
+//     timer = setTimeout(function() {
+//       timer = null;
+//       // indexCheck();
+//       if(e.deltaY < 0){
+//         i--;
+//         nextElem(boxArr[i]);
+//         boxVisible(boxArr[i]);
+//       }
+//     }, 400);
+//   }
+// });
+
+
+
+
+</script>
+</html>

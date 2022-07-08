@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  
+
+  <script>
+    const root = document.getElementById('root');
+
+    root.innerHTML = `
+    <ul>
+      <li class = 'byun'>변요한</li>
+      <li class = 'leejoo'>이주영</li>
+      <li class = 'gu'>구교환</li>
+      <li class = 'jeon'>전여빈</li>
+      <li class = 'um'>엄태구</li>
+      <li class = 'lee'>이민지</li>
+    </ul>
+
+    `
+    const container = document.querySelector('ul');
+    const item = document.querySelectorAll('li');
+
+    container.style.width = '100vw';
+    container.style.height = '50vh';
+    container.style.backgroundColor = '#222';
+    container.style.display = 'flex';
+    container.style.justifyContent = 'center';
+    container.style.alignItems = 'center';
+    container.style.flexDirection = 'column';
+
+
+    let items = Array.from(item);
+
+    for(let i = 0; i < item.length; i++){
+      items[i].style.listStyleType = 'none';
+      items[i].style.marginTop = '2vh';
+      items[i].style.color = '#fff';
+      items[i].style.height = '100px';
+      items[i].style.width = '100px';
+      items[i].style.backgroundColor = '#444';
+    }
+
+    
+    let first = items.shift()
+    console.log(first);
+
+
+    let last = items.length-1
+    console.log(items[last]);
+
+    function arrEvent(){
+      items.push(first);
+      items.unshift(items[last]); 
+      items.splice(items.length-2, items.length-1)
+    }
+
+    let newArr = items;
+    console.log(newArr);
+  container.addEventListener('click', ()=>{
+    arrEvent();
+
+    console.log(items);
+  });
+
+
+
+  container.innerHTML = "items";
+  // console.log(container);
+
+
+
+    
+
+
+
+  </script>
+</body>
+</html>

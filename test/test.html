@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 100vw;
+      height: 500vh;
+      background-color: #ccc;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    
+  </div>
+  <script>
+
+    const root = document.getElementById('root');
+
+
+
+    let i = -1;
+
+    function indexCheck(){
+  i++;
+  if(i >= 3){
+    i = 3;  
+  }
+  // console.log(i);
+}
+function indexCheckOpposite(){
+  i--;
+  if(i <= 0){
+    i = 0;  
+  }
+  // console.log(i);
+}
+
+let timer;
+
+root.addEventListener('wheel', function (e) {
+  if (!timer) {
+    timer = setTimeout(function() {
+      timer = null;
+      if(e.deltaY > 0){
+        indexCheck();
+        
+        console.log(i);
+      }
+    }, 300);
+  }
+});
+
+root.addEventListener('wheel', function(e){
+  if (!timer) {
+      timer = setTimeout(function() {
+        timer = null;
+        if(e.deltaY < 0){
+          indexCheckOpposite();
+          console.log(i);
+  
+        }
+      }, 300);
+    }
+})
+
+
+  </script>
+</body>
+</html>
