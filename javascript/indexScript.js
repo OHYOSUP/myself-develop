@@ -39,20 +39,22 @@ const newsText = document.getElementById('newsText');
 const sectionOne = document.getElementById('sectionOne');
 const sectionTwo = document.getElementById('sectionTwo');
 const risingSectionOne = document.getElementById('risingSectionOne');
-const risingSectionTow = document.getElementById('risingSectionTwo');
-
+const risingSectionTwo = document.getElementById('risingSectionTwo');
+const risingText = document.getElementById('risingText');
 
 nextPage(main, 'wheel', pilgrimage_main)
 nextPage(pilgrimage_main, 'wheel', actorTextBox)
 nextPage(indiText, 'wheel', sectionOne);
 nextPage(sectionOne, 'wheel', sectionTwo);
 nextPage(sectionTwo, 'wheel', risingSectionOne);
-nextPage(risingSectionOne, 'wheel', risingSectionTow);
+nextPage(risingSectionOne, 'wheel', risingSectionTwo);
 
 prevPage(pilgrimage_main, 'wheel', main);
 prevPage(sectionOne, 'wheel', indiText);
 prevPage(sectionTwo, 'wheel', sectionOne);
 prevPage(risingSectionOne, 'wheel', sectionTwo);
+prevPage(risingSectionTwo, 'wheel', risingSectionOne);
+
 
 
 pilgrimageRisingSlidePrev('click');
