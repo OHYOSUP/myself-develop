@@ -37,24 +37,27 @@
     }
   }
 
-  // &>ul {
-  //   width: 40vw;
-  //   height: 5vh;
-  //   list-style-type: none;
-  //   @include flexCenter(space-around, center);
-  //   position: fixed;
-  //   z-index: 100;
-  //   left: -17vw;
-  //   transform: rotate(-90deg);
-  //   mix-blend-mode: difference;
+  &>ul {
+    width: 40vw;
+    height: 5vh;
+    list-style-type: none;
+    @include flexCenter(space-around, center);
+    position: fixed;
+    z-index: 101;
+    left: -17vw;
+    transform: rotate(-90deg);
+    color: #000;
 
-  //   &>li {
-  //     width: 13vw;
-  //     height: 5vh;
-  //     @include flexCenter(space-around, center);
-  //     font-weight: 800;
-  //   }
-  // }
+    // mix-blend-mode: transparent;
+
+    &>li {
+      width: 13vw;
+      height: 5vh;
+      @include flexCenter(space-around, center);
+      font-weight: 800;
+
+    }
+  }
 }
 
 .glassHour ::before {
@@ -122,7 +125,7 @@
         @include flexCenter(center, flex-end);
         position: absolute;
         bottom: 20vh;
-        left: 15vw;
+        left: 10vw;
 
         &>div:nth-child(1) {
           width: 10vw;

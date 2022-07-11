@@ -63,7 +63,7 @@ const legacyAnchor = document.getElementById('legacyAnchor');
 const lastPage_images = Array.from(image);
 const lastPage_imageName = Array.from(imageName);
 
-// hanbok_naviEvent('click');
+hanbok_naviEvent('click');
 
 
 legacyMainSlideNext('click');

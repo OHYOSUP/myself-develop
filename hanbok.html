@@ -9,8 +9,25 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&family=Song+Myung&display=swap" rel="stylesheet">
-
   <title>Document</title>
+  <style>
+
+    .totheTop{
+    width: 5vw;
+    height: 5vw;
+    /* border: 1px solid red; */
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+    font-size: 2rem;
+    font-weight: 700;
+    position: fixed;
+    right: 3vw;
+    bottom: 2vw;
+  }
+  </style>
 </head>
 
 <body>
@@ -21,28 +38,28 @@
       </div>
     </div>
 
-    <!-- <ul id="navi" >
-      <a href="http://127.0.0.1:5500/index.html" style="text-decoration: none; mix-blend-mode: difference; color: white;">
+    <ul id="navi" >
+      <a href="http://127.0.0.1:5500/index.html" style="text-decoration: none; color: #000;">
         <li class="section">
           <span>HOME</span>
       </a>
       </li>
-      <a href="#hanbok_legacy" style="text-decoration: none; mix-blend-mode: difference; color: white;">
+      <a href="#hanbok_legacy" style="text-decoration: none; color: #000;">
         <li class="section">
           <span>LEGACY</span>
       </a>
       </li>
-      <a href="#hanbok_newWave_mainPage" style="text-decoration: none; mix-blend-mode: difference; color: white;">
+      <a href="#hanbok_newWave_mainPage" style="text-decoration: none; color: #000;">
         <li class="section">
           <span>NEW WAVE</span>
       </a>
       </li>
-      <a href="#hanbok_tradition" style="text-decoration: none; mix-blend-mode: difference; color: white;">
+      <a href="#hanbok_tradition" style="text-decoration: none; color: #000;">
           <li class="section">
             <span>TRADITION</span>
         </a>
       </li>
-    </ul> -->
+    </ul>
 
     <div id="title">
       <p>HANBOK</p>
@@ -384,6 +401,11 @@
 
   </div>
 
+  <div class="totheTop">
+    <a href="#root" style="text-decoration: none; color: #BA3737; z-index: 101;">
+      <span>TOP</span>
+    </a>
+  </div>
 
   <script src="/javascript/hanbok_indexScript.js" type="module"></script>
 </body>

@@ -31,6 +31,27 @@
   justify-content: center;
   align-items: center;
 }
+#root > ul {
+  width: 40vw;
+  height: 5vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 101;
+  left: -17vw;
+  transform: rotate(-90deg);
+  color: #000;
+}
+#root > ul > li {
+  width: 13vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 800;
+}
 
 .glassHour ::before {
   content: url(/image/hanbok/hanbok_tradition/glasshour.svg);
@@ -93,7 +114,7 @@
   align-items: flex-end;
   position: absolute;
   bottom: 20vh;
-  left: 15vw;
+  left: 10vw;
 }
 #hanbok_tradition #containerOne > div:nth-child(1) #description_one > div:nth-child(1) {
   width: 10vw;
