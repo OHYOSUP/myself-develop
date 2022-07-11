@@ -453,16 +453,6 @@ body {
 
         &>div:nth-child(1){
           width: 35vw;
-          height: 33vh;
-          // border: 1px solid #fff;
-          font-size: 3rem;
-          font-weight: 800;
-          letter-spacing: 3px;
-        @include flexCenter(flex-start, center);
-        }
-
-        &>div:nth-child(2){
-          width: 35vw;
           height: 10vh;
           // border: 1px solid #fff;
           font-size: 2rem;
@@ -471,7 +461,7 @@ body {
         @include flexCenter(flex-start, center);
         }
 
-        &>div:nth-child(3) {
+        &>div:nth-child(2) {
           width: 35vw;
           height: 20vh;
           // border: 1px solid #fff;
