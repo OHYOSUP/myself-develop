@@ -205,15 +205,21 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   opacity: 0;
 }
 #hanbok_tradition #containerThree #description_three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Gowun Batang", serif;
 }
 #hanbok_tradition #containerThree > div:nth-child(2) {
   width: 50vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #hanbok_tradition #containerFour {
   width: 100vw;

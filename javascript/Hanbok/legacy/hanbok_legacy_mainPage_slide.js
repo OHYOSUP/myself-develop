@@ -9,8 +9,8 @@ let currentIndex = 0;
 let slideCount = slideImg.length;
 // console.log(slideImg);
 
-let slideWidth = 532;
-let slideMargin = 50;
+let slideWidth = 30;
+let slideMargin = 0.8;
 
 function makeClone(){
   let cloneSlide_first = slideImg[0].cloneNode(true);
@@ -20,8 +20,8 @@ function makeClone(){
 }
 
 function initfunction(){
-  slide.style.widht = slideWidth * (slideCount + 1) + 'px';
-  slide.style.left = -slideWidth + 'px';
+  slide.style.widht = slideWidth * (slideCount + 1) + 'vw';
+  slide.style.left = -slideWidth + 'vw';
 }
 
 makeClone();
@@ -32,14 +32,14 @@ export function legacyMainSlideNext(eventType){
   if(currentIndex < slideCount - 1 ){
     // console.log(currentIndex);
   
-    slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'px';
+    slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'vw';
     slide.style.transition = `${0.5}s ease-out`;
   }
   if(currentIndex === slideCount-1){
     // console.log(currentIndex);
   
     // setTimeout(function(){
-      slide.style.left = -(slideMargin + slideWidth) + 'px';
+      slide.style.left = -(slideMargin + slideWidth) + 'vw';
       slide.style.transition = `${0}s ease-out`;
     // },200);
     currentIndex = -1;
@@ -52,7 +52,7 @@ export function legacyMainSlidePrev (eventType){
   
   prev.addEventListener(eventType, function(){
     if(currentIndex > 0){
-      slide.style.left = -currentIndex * (slideMargin + slideWidth) + 'px';
+      slide.style.left = -currentIndex * (slideMargin + slideWidth) + 'vw';
       slide.style.transition = `${0.5}s ease-out`
       console.log(currentIndex);
     }
@@ -60,7 +60,7 @@ export function legacyMainSlidePrev (eventType){
       console.log(currentIndex);
   
       setTimeout(function(){
-        slide.style.left = -slideCount * (slideMargin + slideWidth) + 'px';
+        slide.style.left = -slideCount * (slideMargin + slideWidth) + 'vw';
         slide.style.transition = `${0}s ease-out`;
       },200);
       currentIndex = slideCount;

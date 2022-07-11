@@ -244,7 +244,7 @@
     width: 100vw;
     height: 110vh;
     position: relative;
-    @include flexCenter(center, center);
+    @include flexCenter(center, flex-end);
     opacity: 0;
 
     // border: 1px solid red;
@@ -253,6 +253,7 @@
       // font-weight: 540;
       // line-height: 30px;
       // border: 1px solid red;
+      @include flexCenter(center, center);
 
       font-family: 'Gowun Batang', serif;
 
@@ -263,6 +264,8 @@
       width: 50vw;
       height: 100vh;
       // background-color: #ccc;
+      @include flexCenter(center, center);
+
     }
   }
 

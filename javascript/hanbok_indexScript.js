@@ -55,10 +55,11 @@ const slideImg = document.querySelectorAll('.slide li');
 const prev = document.getElementById('prevBtn');
 const next = document.getElementById('nextBtn');
 const legacyMainContainer = document.getElementById('legacyMainContainer');
-const description_Two = document.getElementById('description_Two')
-const description_Three = document.getElementById('description_Three')
+const description_two = document.getElementById('description_two')
+const description_three = document.getElementById('description_three')
 const legacyMain = document.getElementById('legacyMain');
 const legacyAnchor = document.getElementById('legacyAnchor');
+
 
 const lastPage_images = Array.from(image);
 const lastPage_imageName = Array.from(imageName);
