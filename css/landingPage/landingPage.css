@@ -85,7 +85,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  box-shadow: 0 0 80px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 80px 60px rgba(255, 156, 10, 0.1);
 }
 #root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(1) #lightGroup > div:nth-child(2) {
   width: 3vw;
@@ -98,7 +98,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  box-shadow: 0 0 80px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 80px 60px rgba(255, 156, 10, 0.1);
 }
 #root #footer > div:nth-child(1) #pilgrimageBox > div:nth-child(2) {
   width: 20vw;
@@ -151,7 +151,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  box-shadow: 0 0 80px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 80px 60px rgba(255, 156, 10, 0.1);
 }
 #root #footer > div:nth-child(1) #hanbokBox > div:nth-child(1) #lightGroup_hanbok > div:nth-child(2) {
   width: 3vw;
@@ -164,7 +164,7 @@
   height: 15px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  box-shadow: 0 0 80px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 80px 60px rgba(255, 156, 10, 0.1);
 }
 #root #footer > div:nth-child(1) #hanbokBox > div:nth-child(2) {
   width: 20vw;
@@ -185,6 +185,47 @@
   justify-content: flex-start;
 }
 
+.glowing {
+  opacity: 0;
+  -webkit-animation-name: glowUp;
+          animation-name: glowUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes glowUp {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 20px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  }
+  75% {
+    opacity: 0.3;
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+  100% {
+    opacity: 0.5;
+    box-shadow: 0 0 60px 40px #fff 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+}
+
+@keyframes glowUp {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 20px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
+  }
+  75% {
+    opacity: 0.3;
+    box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+  100% {
+    opacity: 0.5;
+    box-shadow: 0 0 60px 40px #fff 0 0 70px 40px rgba(255, 253, 23, 0.5), 0 0 100px 60px rgba(255, 156, 10, 0.5);
+  }
+}
 @-webkit-keyframes textGlow {
   0% {
     text-shadow: 0 0 10px #3d3b35, 0 0 20px #5e5a4f, 0 0 30px #55534d, 0 0 40px #1b1a17;
@@ -202,7 +243,6 @@
     text-shadow: 0 0 20px #DBBA57, 0 0 30px #DBBA57, 0 0 30px #DBBA57, 0 0 40px #DBBA57;
   }
 }
-
 @keyframes textGlow {
   0% {
     text-shadow: 0 0 10px #3d3b35, 0 0 20px #5e5a4f, 0 0 30px #55534d, 0 0 40px #1b1a17;
