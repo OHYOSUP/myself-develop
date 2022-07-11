@@ -241,20 +241,17 @@
   #logo {
     width: 30vw;
   }
-
   #desTextOne {
     position: absolute;
     bottom: 12vh;
     left: 1vw;
   }
-
   #description_two {
     position: absolute;
     top: 50vh;
     right: 25vw;
     font-size: 1rem;
   }
-
   #description_three {
     width: 40vw;
     height: 30vh;
@@ -273,7 +270,6 @@
     left: 1vw;
     font-size: 0.7rem;
   }
-
   #description_two {
     width: 25vw;
     height: 25vh;
@@ -282,7 +278,6 @@
     right: 17vw;
     font-size: 0.2rem;
   }
-
   #description_three {
     width: 32vw;
     height: 30vh;
@@ -301,7 +296,6 @@
     left: 1vw;
     font-size: 0.5px;
   }
-
   #description_two {
     width: 25vw;
     height: 25vh;
@@ -311,7 +305,6 @@
     font-size: 0.1px;
     line-height: 0px;
   }
-
   #description_three {
     width: 30vw;
     height: 10vh;

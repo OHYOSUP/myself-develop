@@ -8,3 +8,5 @@ export function pilgrimage_naviEvent (eventType){
     });
   })
 }
+
+

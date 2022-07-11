@@ -32,14 +32,33 @@ const background = document.getElementById('background');
 const pilgrimage_main = document.getElementById('pilgrimage_main');
 const imageBox = document.getElementById('imageBox');
 const imageDescription = document.getElementById('imageDescription');
-const actorbox = document.getElementById('actorbox');
-// pilgrimage_naviEvent('click');
+const actorTextBox = document.getElementById('actorTextBox');
+const pilgrimage_pageTwo = document.getElementById('pilgrimage_pageTwo');
+const indiText = document.getElementById('indiText');
+const newsText = document.getElementById('newsText');
+const sectionOne = document.getElementById('sectionOne');
+const sectionTwo = document.getElementById('sectionTwo');
+const risingSectionOne = document.getElementById('risingSectionOne');
+const risingSectionTow = document.getElementById('risingSectionTwo');
+
 
 nextPage(main, 'wheel', pilgrimage_main)
+nextPage(pilgrimage_main, 'wheel', actorTextBox)
+nextPage(indiText, 'wheel', sectionOne);
+nextPage(sectionOne, 'wheel', sectionTwo);
+nextPage(sectionTwo, 'wheel', risingSectionOne);
+nextPage(risingSectionOne, 'wheel', risingSectionTow);
+
+prevPage(pilgrimage_main, 'wheel', main);
+prevPage(sectionOne, 'wheel', indiText);
+prevPage(sectionTwo, 'wheel', sectionOne);
+prevPage(risingSectionOne, 'wheel', sectionTwo);
+
 
 pilgrimageRisingSlidePrev('click');
 pilgrimageRisingSlideNext('click');
 
+pilgrimage_naviEvent('click');
 
 // scrollValueEvent(background)
 // scrollArrElemFadein(background,"",8);

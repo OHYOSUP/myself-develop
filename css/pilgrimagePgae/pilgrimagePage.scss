@@ -193,7 +193,7 @@ body {
     }
   }
 
-  #newContainer {
+  #newsContainer {
     width: 100vw;
     // height: 200vh;
     z-index: 1;
@@ -474,5 +474,18 @@ body {
         }
       }
     }
+  }
+
+  .totheTop{
+    width: 5vw;
+    height: 5vw;
+    // border: 1px solid red;
+    @include flexCenter(center, center);
+    color: #BA3737;
+    font-size: 2rem;
+    font-weight: 700;
+    position: fixed;
+    right: 3vw;
+    bottom: 2vw;
   }
 }

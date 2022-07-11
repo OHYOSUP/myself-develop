@@ -172,7 +172,7 @@ body {
   color: #BA3737;
   font-weight: 1000;
 }
-#background #newContainer {
+#background #newsContainer {
   width: 100vw;
   z-index: 1;
   position: relative;
@@ -181,7 +181,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div:nth-child(1) {
+#background #newsContainer > div:nth-child(1) {
   width: 100vw;
   height: 70vh;
   display: flex;
@@ -190,7 +190,7 @@ body {
   flex-direction: column;
   opacity: 0;
 }
-#background #newContainer > div:nth-child(1) > div {
+#background #newsContainer > div:nth-child(1) > div {
   width: 90vw;
   height: 15vh;
   background-color: #595959;
@@ -202,11 +202,11 @@ body {
   align-items: center;
   font-weight: 700;
 }
-#background #newContainer > div:nth-child(1) > div > p {
+#background #newsContainer > div:nth-child(1) > div > p {
   margin-left: 2vw;
   letter-spacing: 2px;
 }
-#background #newContainer > div:nth-child(2) {
+#background #newsContainer > div:nth-child(2) {
   width: 100vw;
   height: 120vh;
   background-color: #2D2D2D;
@@ -216,7 +216,7 @@ body {
   align-items: center;
   opacity: 0;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(1) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(1) {
   width: 50vw;
   height: 90vh;
   display: flex;
@@ -224,17 +224,17 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
   width: 37vw;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
   width: 35vw;
   height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
   font-size: 0.8rem;
   font-weight: 500;
@@ -245,14 +245,14 @@ body {
   text-align: justify;
   color: #fff;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
   width: 40vw;
   height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(2) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(2) {
   width: 47vw;
   height: 90vh;
   display: flex;
@@ -260,14 +260,14 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 47vw;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#background #newContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+#background #newsContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
   width: 47vw;
   height: 10vh;
   font-size: 0.8rem;
@@ -433,4 +433,17 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+}
+#background .totheTop {
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #BA3737;
+  font-size: 2rem;
+  font-weight: 700;
+  position: fixed;
+  right: 3vw;
+  bottom: 2vw;
 }/*# sourceMappingURL=pilgrimagePage.css.map */
