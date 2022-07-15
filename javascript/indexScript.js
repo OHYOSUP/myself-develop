@@ -74,7 +74,7 @@ titleTextStyle('15rem', 1000, 'relative', 10, 0, '2vh');
 
 const container = document.querySelectorAll('.container');
 const containerArr = Array.from(container);
-console.log(containerArr);
+// console.log(containerArr);
 
 let i = -1;
 
@@ -115,7 +115,7 @@ background.addEventListener('wheel', function (e) {
         indexCheck();
 
         // console.log(e.deltaY);
-        console.log(i);
+        // console.log(i);
         boxVisible(containerArr[i]);
       }
     }, 400);

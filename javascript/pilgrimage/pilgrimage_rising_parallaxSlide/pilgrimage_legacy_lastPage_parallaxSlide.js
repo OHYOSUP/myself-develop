@@ -7,7 +7,7 @@ const next = document.getElementById('next');
 
 let currentIndex = 0;
 let slideCount = slideImg.length;
-console.log(slideImg);
+// console.log(slideImg);
 
 let slideWidth = 768;
 let slideMargin = 0;
@@ -31,13 +31,13 @@ export function pilgrimageRisingSlideNext (eventType){
 
   next.addEventListener(eventType, function(){
   if(currentIndex < slideCount - 1 ){
-    console.log(currentIndex);
+    // console.log(currentIndex);
   
     slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'px';
     slide.style.transition = `${0.5}s ease-out`;
   }
   if(currentIndex === slideCount-1){
-    console.log(currentIndex);
+    // console.log(currentIndex);
   
     setTimeout(function(){
       slide.style.left = -(slideMargin + slideWidth) + 'px';
