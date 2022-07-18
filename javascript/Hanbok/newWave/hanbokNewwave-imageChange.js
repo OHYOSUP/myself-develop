@@ -4,10 +4,8 @@ const colorImage = document.getElementById('colorImage');
 // const section = Array.from(sections);
 
 
-let colorArr = ['#BB272D', '#E3DDCB', '#3E465B', '#245441', '#6D1B43', '#161616'];
 // let test = ["../image/hanbok/hanbok_newWave/hanbok_newWave_0.svg","../image/hanbok/hanbok_newWave/hanbok_newWave_1.svg"];
-
-
+let colorArr = ['#BB272D', '#E3DDCB', '#3E465B', '#245441', '#6D1B43', '#161616'];
 
   export function colorChange(eventType){
     newWave_color.addEventListener(eventType, (e)=>{
@@ -19,7 +17,6 @@ let colorArr = ['#BB272D', '#E3DDCB', '#3E465B', '#245441', '#6D1B43', '#161616'
           // console.dir(colorImage.children[0]);
           colorImage.children[0].setAttribute('src',`../image/hanbok/hanbok_newWave/hanbok_newWave_${i}.svg`);
           colorImage.style.transition = '0.3s';
-
         }
       }
     });

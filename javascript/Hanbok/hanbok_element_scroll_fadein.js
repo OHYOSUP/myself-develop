@@ -1,8 +1,6 @@
 const imageBox = document.getElementById('imageBox');
 
-
 let posY = 0;
-
 
 function scrollDownEvent() {
   window.scrollBy({
@@ -51,7 +49,3 @@ export function scrollElemFadein(pageName, elem, targetElem, yValue) {
     }
   });
 }
-
-
-
-

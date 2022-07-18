@@ -10,7 +10,7 @@ let slideCount = slideImg.length;
 // console.log(slideImg);
 
 let slideWidth = 30;
-let slideMargin = 0.8;
+let slideMargin = 2;
 
 function makeClone(){
   let cloneSlide_first = slideImg[0].cloneNode(true);
@@ -37,11 +37,8 @@ export function legacyMainSlideNext(eventType){
   }
   if(currentIndex === slideCount-1){
     // console.log(currentIndex);
-  
-    // setTimeout(function(){
       slide.style.left = -(slideMargin + slideWidth) + 'vw';
       slide.style.transition = `${0}s ease-out`;
-    // },200);
     currentIndex = -1;
   }
   currentIndex += 1;
