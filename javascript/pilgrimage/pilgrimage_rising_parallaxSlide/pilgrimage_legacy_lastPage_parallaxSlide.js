@@ -28,7 +28,6 @@ makeClone();
 initfunction();
 
 export function pilgrimageRisingSlideNext (eventType){
-
   next.addEventListener(eventType, function(){
   if(currentIndex < slideCount - 1 ){
     // console.log(currentIndex);

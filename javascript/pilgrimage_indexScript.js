@@ -25,7 +25,10 @@ import {
 import {
   scrollValueEvent
 } from "./pilgrimage/pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
-import {pilgrimageRisingSlideNext, pilgrimageRisingSlidePrev} from"./pilgrimage/pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
+import {
+  pilgrimageRisingSlideNext,
+  pilgrimageRisingSlidePrev
+} from "./pilgrimage/pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
 
 const main = document.getElementById('main');
 const background = document.getElementById('background');
@@ -127,7 +130,7 @@ background.addEventListener('wheel', function (e) {
     timer = setTimeout(function () {
       timer = null;
       if (e.deltaY < 0) {
-        
+
         indexCheckOpposite();
         // console.log(e.deltaY);
         // console.log(i);
@@ -137,5 +140,3 @@ background.addEventListener('wheel', function (e) {
     }, 500);
   }
 })
-
-

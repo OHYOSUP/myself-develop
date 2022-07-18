@@ -29,7 +29,7 @@ function legacyBgSlide() {
   requestAnimationFrame(legacyBgSlide);
   if (i < 5820 && isStatus === true) {
     i++;
-    console.log(i);
+    // console.log(i);
     hanbok_legacy_slide.style.transform = `translateX(${-i}px)`;
     if (i >= 5820) {
       i = 5820
@@ -40,7 +40,7 @@ function legacyBgSlide() {
 function legacyBgSlideOpposite() {
   requestAnimationFrame(legacyBgSlideOpposite);
   i--;
-  console.log(i);
+  // console.log(i);
   hanbok_legacy_slide.style.transform = `translateX(${-i}px)`;
   if (i <= 0) {
     i = 0;

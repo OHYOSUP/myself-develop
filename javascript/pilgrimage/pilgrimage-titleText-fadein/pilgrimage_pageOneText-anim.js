@@ -4,10 +4,10 @@ const strText = titleText.textContent;
 
 
 
-export function titleTextStyle(fontSize, fontWeight, position, zIndex, left, top, color){
+export function titleTextStyle(fontSize, fontWeight, position, zIndex, left, top, color) {
 
   titleText.style.fontSize = fontSize;
-  
+
   titleText.style.fontWeight = fontWeight;
   titleText.style.position = position;
   titleText.style.zIndex = zIndex;
