@@ -27,36 +27,6 @@ body {
   transform: scale(6, 11);
   color: #BA3737;
 }
-#main nav {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #2D2D2D;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-#main nav > ul {
-  width: 100vw;
-  height: 10vh;
-  background-color: #373737;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
-#main nav > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 5px;
-  transform: scale(2, 3);
-}
 
 #titleText {
   opacity: 1;
@@ -147,8 +117,8 @@ body {
 #background #pilgrimage_pageTwo > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 44vw;
   color: #fff;
-  font-size: 0.8rem;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 40px;
   text-align: justify;
 }
 #background #indiText {
@@ -345,7 +315,6 @@ body {
   display: flex;
   align-items: center;
   overflow-x: hidden;
-  opacity: 0;
 }
 #background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) {
   width: 50vw;
@@ -436,20 +405,24 @@ body {
 #background #pilgrimage_rising > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 35vw;
   height: 20vh;
+  font-size: 1rem;
+  line-height: 35px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 #background .totheTop {
-  width: 5vw;
+  width: 10vw;
   height: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #BA3737;
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   position: fixed;
   right: 3vw;
   bottom: 2vw;
+  display: flex;
+  justify-content: space-around;
 }/*# sourceMappingURL=pilgrimagePage.css.map */

@@ -63,13 +63,14 @@ body {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  left: 5vw;
   overflow: hidden;
 }
 #hanbok_legacy > div:nth-child(2) #legacyMainContainer > ul {
   width: 480vw;
   height: 723px;
   position: absolute;
-  left: 0;
+  left: 0vw;
   top: 0;
   /* margin : 50px; */
   overflow: hidden;
@@ -102,8 +103,8 @@ body {
 }
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 22vw;
-  height: 70vh;
-  font-size: 12px;
+  height: 40vh;
+  font-size: 1rem;
   line-height: 35px;
   text-align: justify;
   display: flex;
@@ -131,7 +132,7 @@ body {
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(1) {
   cursor: default;
   width: 5vw;
-  height: 5vh;
+  height: 2vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -139,7 +140,7 @@ body {
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(2) {
   cursor: default;
   width: 5vw;
-  height: 5vh;
+  height: 2vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -147,7 +148,6 @@ body {
 #hanbok_legacy #hanbok_legacy_slide {
   width: 640vw;
   background-color: #252525;
-  opacity: 0;
 }
 #hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) {
   width: 600vw;
@@ -163,7 +163,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 }
 #hanbok_legacy #legacy_des > div:nth-child(1) {
@@ -180,14 +180,14 @@ body {
   font-weight: 700;
   letter-spacing: 6px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 #hanbok_legacy #legacy_des > div:nth-child(1) > div:nth-child(2) {
   width: 50vw;
   height: 40vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 #hanbok_legacy #legacy_des > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
@@ -196,18 +196,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #fff;
   font-weight: 300;
   flex-direction: column;
-  line-height: 35px;
+  line-height: 45px;
 }
 #hanbok_legacy #legacy_des > div:nth-child(2) {
   width: 40vw;
   height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 #hanbok_legacy #hanbok_legacy_lastpage {
   width: 100vw;

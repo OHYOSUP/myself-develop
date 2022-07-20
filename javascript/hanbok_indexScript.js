@@ -72,8 +72,10 @@ legacyMainSlidePrev('click');
 
 
 nextPage(root, 'wheel', containerOne);
-prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
 nextPage(newWave_color, 'wheel', legacyAnchor);
+
+prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
+prevPage(newWave_color, 'wheel', hanbok_newWave_mainPage);
 
 
 

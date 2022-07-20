@@ -26,6 +26,7 @@ import {
   scrollValueEvent
 } from "./pilgrimage/pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
 import {
+  
   pilgrimageRisingSlideNext,
   pilgrimageRisingSlidePrev
 } from "./pilgrimage/pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
@@ -44,19 +45,20 @@ const sectionTwo = document.getElementById('sectionTwo');
 const risingSectionOne = document.getElementById('risingSectionOne');
 const risingSectionTwo = document.getElementById('risingSectionTwo');
 const risingText = document.getElementById('risingText');
+// const risingText = document.getElementById('risingText');
 
 nextPage(main, 'wheel', pilgrimage_main)
 nextPage(pilgrimage_main, 'wheel', actorTextBox)
-nextPage(indiText, 'wheel', sectionOne);
-nextPage(sectionOne, 'wheel', sectionTwo);
-nextPage(sectionTwo, 'wheel', risingSectionOne);
-nextPage(risingSectionOne, 'wheel', risingSectionTwo);
+// nextPage(indiText, 'wheel', newsText);
+// nextPage(sectionOne, 'wheel', sectionTwo);
+// nextPage(sectionTwo, 'wheel', risingText);
+// nextPage(risingSectionOne, 'wheel', risingSectionTwo);
 
 prevPage(pilgrimage_main, 'wheel', main);
-prevPage(sectionOne, 'wheel', indiText);
-prevPage(sectionTwo, 'wheel', sectionOne);
-prevPage(risingSectionOne, 'wheel', sectionTwo);
-prevPage(risingSectionTwo, 'wheel', risingSectionOne);
+// prevPage(sectionOne, 'wheel', indiText);
+// prevPage(sectionTwo, 'wheel', sectionOne);
+// prevPage(risingSectionOne, 'wheel', sectionTwo);
+// prevPage(risingSectionTwo, 'wheel', risingSectionOne);
 
 
 

@@ -32,35 +32,35 @@ body {
   }
 
 
-  nav {
-    width: 100vw;
-    height: 10vh;
-    @include flexCenter(space-around, center);
-    background-color: #2D2D2D;
-    position: fixed;
-    top: 0;
-    z-index: 100;
+  // nav {
+  //   width: 100vw;
+  //   height: 10vh;
+  //   @include flexCenter(space-around, center);
+  //   background-color: #2D2D2D;
+  //   position: fixed;
+  //   top: 0;
+  //   z-index: 100;
 
-    &>ul {
-      width: 100vw;
-      height: 10vh;
-      background-color: #373737;
-      @include flexCenter(space-around, center);
-      list-style-type: none;
+  //   &>ul {
+  //     width: 100vw;
+  //     height: 10vh;
+  //     background-color: #373737;
+  //     @include flexCenter(space-around, center);
+  //     list-style-type: none;
 
-      &>li {
-        // width: 33vw;
-        // height: 15vh;
-        @include flexCenter(center, center);
+  //     &>li {
+  //       // width: 33vw;
+  //       // height: 15vh;
+  //       @include flexCenter(center, center);
 
-        color: #fff;
-        font-size: 1.5rem;
-        font-weight: 800;
-        letter-spacing: 5px;
-        transform: scale(2, 3);
-      }
-    }
-  }
+  //       color: #fff;
+  //       font-size: 1.5rem;
+  //       font-weight: 800;
+  //       letter-spacing: 5px;
+  //       transform: scale(2, 3);
+  //     }
+  //   }
+  // }
 }
 #titleText {
 
@@ -157,8 +157,8 @@ body {
         &>div:nth-child(1){
           width: 44vw;
           color: #fff;
-          font-size: 0.8rem;
-          line-height: 30px;
+          font-size: 1rem;
+          line-height: 40px;
           text-align: justify;
         }
       }
@@ -376,7 +376,7 @@ body {
       display: flex;
       align-items: center;
       overflow-x: hidden;
-      opacity: 0;
+      // opacity: 0;
 
       &>div:nth-child(1) {
         width: 50vw;
@@ -464,6 +464,8 @@ body {
         &>div:nth-child(2) {
           width: 35vw;
           height: 20vh;
+          font-size: 1rem;
+          line-height: 35px;
           // border: 1px solid #fff;
           @include flexCenter(flex-start, flex-end);
 
@@ -473,15 +475,17 @@ body {
   }
 
   .totheTop{
-    width: 5vw;
+    width: 10vw;
     height: 5vw;
     // border: 1px solid red;
     @include flexCenter(center, center);
-    color: #BA3737;
+    color: #fff;
     font-size: 2rem;
     font-weight: 700;
     position: fixed;
     right: 3vw;
     bottom: 2vw;
+    display: flex;
+    justify-content: space-around;
   }
 }

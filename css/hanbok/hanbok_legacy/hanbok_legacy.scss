@@ -73,21 +73,20 @@ body {
       @include flexCenter(flex-end, center);
       // border: 1px solid red;
       position: relative;
+      left: 5vw;
       overflow: hidden;
 
       &>ul {
         width: 480vw;
         height: 723px;
         position: absolute;
-        left: 0;
+        left: 0vw;
         top: 0;
         // border: 1px solid red;
         /* margin : 50px; */
         overflow: hidden;
         transition: 0.5 ease-out;
-
         display: flex;
-        // border: 1px salmon;
 
         &>li {
           width: 30vw;
@@ -116,9 +115,11 @@ body {
 
       &>div:nth-child(2) {
         width: 22vw;
-        height: 70vh;
-        font-size: 12px;
+        height: 40vh;
+        font-size: 1rem;
         line-height: 35px;
+        // border: 1px solid blue;
+
         // letter-spacing: 1px;
         text-align: justify;
 
@@ -144,14 +145,14 @@ body {
           &>div:nth-child(1) {
             cursor: default;
             width: 5vw;
-            height: 5vh;
+            height: 2vh;
             @include flexCenter(flex-start, center);
           }
 
           &>div:nth-child(2) {
             cursor: default;
             width: 5vw;
-            height: 5vh;
+            height: 2vh;
             @include flexCenter(flex-end, center);
           }
         }
@@ -162,7 +163,7 @@ body {
   #hanbok_legacy_slide {
     width: 640vw;
     background-color: #252525;
-    opacity: 0;
+    // opacity: 0;
 
     &>div:nth-child(1) {
       width: 600vw;
@@ -184,7 +185,7 @@ body {
     height: 100vh;
     // border: 1px solid red;
     // opacity: 0;
-    @include flexCenter(flex-start, center);
+    @include flexCenter(flex-end, center);
 
     // background-color: #ccc;
     &>div:nth-child(1) {
@@ -192,6 +193,7 @@ body {
       height: 70vh;
       display: flex;
       flex-direction: column;
+      // border: 1px solid red;
 
       &>div:nth-child(1) {
         width: 50vw;
@@ -200,26 +202,28 @@ body {
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: 6px;
-        @include flexCenter(center, center);
+        @include flexCenter(flex-start, center);
+      // border: 1px solid red;
+
       }
 
       &>div:nth-child(2) {
         width: 50vw;
         height: 40vh;
+        // border: 1px solid red;
 
-        @include flexCenter(center, center);
+        @include flexCenter(flex-start, center);
         // border: 1px solid red;
 
         &>div:nth-child(1) {
           width: 42vw;
           height: 20vh;
           @include flexCenter(center, center);
-          font-size: 0.8rem;
-          // border: 1px solid red;
+          font-size: 1rem;
           color: #fff;
           font-weight: 300;
           flex-direction: column;
-          line-height: 35px;
+          line-height: 45px;
         }
       }
     }
@@ -227,7 +231,8 @@ body {
     &>div:nth-child(2) {
       width: 40vw;
       height: 70vh;
-      @include flexCenter(center, center);
+      @include flexCenter(flex-start, flex-start);
+      // border: 1px solid red;
 
     }
   }

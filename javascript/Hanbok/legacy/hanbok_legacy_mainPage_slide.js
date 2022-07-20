@@ -38,7 +38,7 @@ export function legacyMainSlideNext(eventType){
   if(currentIndex === slideCount-1){
     // console.log(currentIndex);
       slide.style.left = -(slideMargin + slideWidth) + 'vw';
-      slide.style.transition = `${0}s ease-out`;
+      // slide.style.transition = `${0}s ease-out`;
     currentIndex = -1;
   }
   currentIndex += 1;
@@ -56,10 +56,10 @@ export function legacyMainSlidePrev (eventType){
     if(currentIndex === 0){
       console.log(currentIndex);
   
-      setTimeout(function(){
+      // setTimeout(function(){
         slide.style.left = -slideCount * (slideMargin + slideWidth) + 'vw';
         slide.style.transition = `${0}s ease-out`;
-      },200);
+      // },200);
       currentIndex = slideCount;
     }
     currentIndex -= 1;
