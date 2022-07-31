@@ -41,15 +41,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 8rem;
+  letter-spacing: 1.5px;
+  font-weight: 500;
 }
 #hanbok_legacy > div:nth-child(1) > p {
   width: 70vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-weight: 500;
-  font-size: 8rem;
-  letter-spacing: 1.5px;
 }
 #hanbok_legacy > div:nth-child(2) {
   width: 100vw;
@@ -101,7 +101,7 @@ body {
   font-size: 16px;
   line-height: 45px;
 }
-#hanbok_legacy > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) #article {
   width: 22vw;
   height: 40vh;
   font-size: 1rem;
@@ -211,6 +211,7 @@ body {
 }
 #hanbok_legacy #hanbok_legacy_lastpage {
   width: 100vw;
+  height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +219,7 @@ body {
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) {
   width: 80vw;
+  height: 100vh;
   display: flex;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) {
@@ -231,11 +233,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
 }
-#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-  width: 25vw;
-}
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > p {
-  width: 25vw;
   height: 5vh;
   opacity: 0;
 }
@@ -252,6 +250,7 @@ body {
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 25vw;
+  height: 60vh;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > p {
   width: 25vw;
@@ -273,6 +272,7 @@ body {
   align-items: center;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 50vw;
   margin-left: 5vw;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) {
@@ -295,4 +295,259 @@ body {
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
   width: 25vw;
   opacity: 0;
+}
+
+@media (max-width: 767px) {
+  #hanbok_legacy #legacyMain > p {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  #hanbok_legacy #containerTwo {
+    width: 30vw;
+    height: 30vh;
+  }
+  #hanbok_legacy #containerTwo .legacyMainText > p {
+    font-size: 8px;
+  }
+  #hanbok_legacy #containerTwo #article {
+    width: 22vw;
+    height: 15vh;
+    display: flex;
+    align-items: flex-start;
+    overflow: scroll;
+  }
+  #hanbok_legacy #containerTwo #article > span {
+    height: 20vh;
+    font-size: 10px;
+  }
+  #hanbok_legacy #containerTwo #article::-webkit-scrollbar {
+    display: none;
+  }
+  #legacyMain_nav > div > div {
+    font-size: 10px;
+  }
+  #hanbok_legacy_slide {
+    width: 640vw;
+    height: 30vh;
+    background-color: #252525;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) {
+    width: 600vw;
+    height: 15vh;
+    display: flex;
+    overflow: hidden;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) > div {
+    height: 15vh;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) > div > img:nth-child(1) {
+    width: 20vw;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) > div > img:nth-child(1) {
+    width: 30vw;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(1) > span {
+    font-size: 1.5rem;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2) {
+    height: 20vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2) > span {
+    font-size: 7px;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+  }
+  #legacy_des > div:nth-child(2) {
+    width: 30vw;
+    border: 1px solid red;
+  }
+  #legacy_des > div:nth-child(2) > div:nth-child(1) {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+  }
+  #legacy_des > div:nth-child(2) > div:nth-child(1) > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage {
+    width: 100vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) {
+    height: 40vh;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) {
+    width: 80vw;
+    height: 40vh;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > div > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) {
+    width: 60vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) > img {
+    width: 80vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) {
+    width: 76vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+    width: 70vw;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #hanbok_legacy #legacyMain > p {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  #hanbok_legacy > div:nth-child(2) {
+    height: 60vh;
+  }
+  #hanbok_legacy > div:nth-child(2) > div:nth-child(1) {
+    width: 60vw;
+    height: 40vh;
+  }
+  #hanbok_legacy #containerTwo {
+    width: 30vw;
+    height: 40vh;
+  }
+  #hanbok_legacy #containerTwo .legacyMainText > p {
+    font-size: 10px;
+  }
+  #hanbok_legacy #containerTwo #article {
+    width: 22vw;
+    height: 20vh;
+    display: flex;
+    align-items: flex-start;
+    overflow: scroll;
+  }
+  #hanbok_legacy #containerTwo #article > span {
+    height: 20vh;
+    font-size: 10px;
+  }
+  #hanbok_legacy #containerTwo #article::-webkit-scrollbar {
+    display: none;
+  }
+  #legacyMain_nav > div > div {
+    font-size: 10px;
+  }
+  #hanbok_legacy_slide {
+    width: 640vw;
+    height: 30vh;
+    background-color: #252525;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) {
+    width: 600vw;
+    height: 30vh;
+    display: flex;
+    overflow: hidden;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) > div {
+    height: 30vh;
+  }
+  #hanbok_legacy_slide > div:nth-child(1) > div > img {
+    width: 30vw;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(1) > span {
+    font-size: 1.5rem;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2) {
+    height: 20vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2) > span {
+    font-size: 10px;
+  }
+  #legacy_des > div:nth-child(1) > div:nth-child(2)::-webkit-scrollbar {
+    display: none;
+  }
+  #legacy_des > div:nth-child(2) {
+    width: 30vw;
+  }
+  #legacy_des > div:nth-child(2) > div:nth-child(1) {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #legacy_des > div:nth-child(2) > div:nth-child(1) > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage {
+    width: 100vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) {
+    height: 100vh;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) {
+    width: 100vw;
+    height: 80vh;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > div > img {
+    width: 40vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) {
+    width: 60vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) > img {
+    width: 80vw;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) {
+    width: 76vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+    border: 1px solid red;
+    width: 70vw;
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=hanbok_legacy.css.map */

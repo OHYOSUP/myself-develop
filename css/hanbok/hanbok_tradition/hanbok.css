@@ -262,4 +262,84 @@
   align-items: center;
   width: 50vw;
   height: 60vh;
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    width: 30vw;
+  }
+  #desTextOne {
+    position: absolute;
+    bottom: 12vh;
+    left: 1vw;
+  }
+  #description_two {
+    position: absolute;
+    top: 50vh;
+    right: 25vw;
+    font-size: 1rem;
+  }
+  #description_three {
+    width: 40vw;
+    height: 30vh;
+    font-size: 1rem;
+    line-height: 30px;
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    font-family: "Gowun Batang", seri;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #desTextOne {
+    position: absolute;
+    bottom: 15vh;
+    left: 1vw;
+    font-size: 0.7rem;
+  }
+  #description_two {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 30vh;
+    right: 17vw;
+    font-size: 0.2rem;
+  }
+  #description_three {
+    width: 32vw;
+    height: 30vh;
+    font-size: 0.5rem;
+    line-height: 30px;
+    position: absolute;
+    left: 9vw;
+    top: 40vh;
+    font-family: "Gowun Batang", seri;
+  }
+}
+@media (max-width: 767px) {
+  #desTextOne {
+    position: absolute;
+    bottom: 18vh;
+    left: 1vw;
+    font-size: 0.5px;
+  }
+  #description_two {
+    width: 25vw;
+    height: 25vh;
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    font-size: 0.1px;
+    line-height: 0px;
+  }
+  #description_three {
+    width: 30vw;
+    height: 10vh;
+    font-size: 0.01px;
+    line-height: 30px;
+    position: absolute;
+    left: 3vw;
+    bottom: 40vh;
+    font-family: "Gowun Batang", seri;
+  }
 }/*# sourceMappingURL=hanbok.css.map */

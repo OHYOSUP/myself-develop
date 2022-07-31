@@ -12,7 +12,6 @@
   align-items: center;
   font-weight: 1000;
   font-size: 3rem;
-  mix-blend-mode: overlay;
 }
 
 .colorDescription {
@@ -22,11 +21,11 @@
   justify-content: flex-end;
   align-items: center;
   font-weight: 600;
-  mix-blend-mode: overlay;
 }
 
 #hanbok_newWave_mainPage {
   width: 100vw;
+  height: 100vh;
   background-color: #565656;
   display: flex;
   justify-content: center;
@@ -34,7 +33,6 @@
 }
 #hanbok_newWave_mainPage #newwaveTextbox {
   width: 20vw;
-  height: 50vh;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -43,14 +41,33 @@
   color: #fff;
 }
 #hanbok_newWave_mainPage #newwaveTextbox > div {
+  width: 20vw;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
 }
 #hanbok_newWave_mainPage #newwaveTextbox > div > p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#hanbok_newWave_mainPage #newwaveTextbox > div:nth-child(1) > p {
+  letter-spacing: 46px;
+}
+#hanbok_newWave_mainPage #newwaveTextbox > div:nth-child(2) > p {
+  letter-spacing: 34px;
+}
+#hanbok_newWave_mainPage #newwaveTextbox > div:nth-child(3) > p {
+  letter-spacing: 34px;
+}
+#hanbok_newWave_mainPage #newwaveTextbox > div:nth-child(4) > p {
+  letter-spacing: 34px;
+}
+#hanbok_newWave_mainPage #newwaveTextbox > div:nth-child(5) > p {
+  letter-spacing: 38px;
 }
 
 #colorInNewwave {
@@ -108,6 +125,7 @@
 }
 #newWave_color > div:nth-child(1) > div:nth-child(6) {
   background-color: #161616;
+  color: #fff;
 }
 #newWave_color #colorImage {
   width: 40vw;
@@ -115,9 +133,110 @@
   transition: 0.3s;
   overflow: hidden;
 }
+#newWave_color #colorImage > img {
+  width: 44vw;
+}
 
 #newWave_linearBgc {
   width: 100vw;
   height: 300vh;
   background: linear-gradient(#ffffff, #252525);
+}
+
+@media (min-width: 1024px) {
+  .newwaveMainText {
+    font-size: 3rem;
+    letter-spacing: 46px;
+    font-weight: 600;
+    width: 20vw;
+    height: 10vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .newwaveMainText {
+    font-size: 2rem;
+    letter-spacing: 26px;
+    font-weight: 600;
+    width: 20vw;
+    height: 6vh;
+  }
+  .newwaveMainImage {
+    width: 81vw;
+  }
+  #newWave_color {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  #newWave_color > div:nth-child(1) {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  #newWave_color > div:nth-child(1) > div {
+    width: 14vw;
+    height: 15vh;
+  }
+  #newWave_color > div:nth-child(1) > div > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  #newWave_color > div:nth-child(1) > div > div:nth-child(2) {
+    opacity: 0;
+  }
+  #newWave_color #colorImage {
+    width: 84vw;
+    height: 50vh;
+  }
+  #newWave_color #colorImage > img {
+    width: 52vw;
+  }
+}
+@media (max-width: 767px) {
+  .newwaveMainText {
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+    font-weight: 600;
+  }
+  #newWave_color {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
+  #newWave_color > div:nth-child(1) {
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+  #newWave_color > div:nth-child(1) > div {
+    width: 14vw;
+    height: 15vh;
+  }
+  #newWave_color > div:nth-child(1) > div > div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #newWave_color > div:nth-child(1) > div > div:nth-child(2) {
+    opacity: 0;
+  }
+  #newWave_color #colorImage {
+    width: 84vw;
+    height: 38vh;
+  }
+  #newWave_color #colorImage > img {
+    width: 52vw;
+  }
+  .newwaveMainImage {
+    width: 60vw;
+  }
 }/*# sourceMappingURL=hanbok_newWave.css.map */

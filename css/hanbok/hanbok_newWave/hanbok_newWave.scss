@@ -19,7 +19,8 @@
   font-weight: 1000;
   font-size: 3rem;
   // color: #fff;
-  mix-blend-mode: overlay;
+  // color: #fff;
+  // mix-blend-mode: overlay;
 }
 
 .colorDescription {
@@ -27,7 +28,9 @@
   height: 2vh;
   @include flexCenter(flex-end, center);
   font-weight: 600;
-  mix-blend-mode: overlay;
+  // color: #fff;
+
+  // mix-blend-mode: overlay;
 }
 
 
@@ -36,12 +39,13 @@
 
 #hanbok_newWave_mainPage {
   width: 100vw;
+  height: 100vh;
   background-color: #565656;
   @include flexCenter(center, center);
 
   #newwaveTextbox {
     width: 20vw;
-    height: 50vh;
+    // height: 100vh;
     // border: 1px  solid red;
     position: absolute;
     @include flexCenter(center, center);
@@ -49,11 +53,11 @@
     color: #fff;
 
     &>div {
-      // width: 20vw;
-      // height: 10vh;
+      width: 20vw;
+      height: 10vh;
       @include flexCenter(center, center);
-      // font-size: 3rem;
-      // font-weight: 600;
+      font-size: 3rem;
+      font-weight: 600;
 
       &>p {
         // width: 20vw;
@@ -62,25 +66,25 @@
       }
     }
 
-    // &>div:nth-child(1)>p {
-    //   letter-spacing: 46px;
-    // }
+    &>div:nth-child(1)>p {
+      letter-spacing: 46px;
+    }
 
-    // &>div:nth-child(2)>p {
-    //   letter-spacing: 34px;
-    // }
+    &>div:nth-child(2)>p {
+      letter-spacing: 34px;
+    }
 
-    // &>div:nth-child(3)>p {
-    //   letter-spacing: 34px;
-    // }
+    &>div:nth-child(3)>p {
+      letter-spacing: 34px;
+    }
 
-    // &>div:nth-child(4)>p {
-    //   letter-spacing: 34px;
-    // }
+    &>div:nth-child(4)>p {
+      letter-spacing: 34px;
+    }
 
-    // &>div:nth-child(5)>p {
-    //   letter-spacing: 38px;
-    // }
+    &>div:nth-child(5)>p {
+      letter-spacing: 38px;
+    }
   }
 }
 
@@ -143,6 +147,7 @@
 
     &>div:nth-child(6) {
       background-color: #161616;
+      color: #fff;
     }
   }
 
@@ -152,6 +157,9 @@
     // background-color: #ccc;
     transition: 0.3s;
     overflow: hidden;
+    &>img{
+      width: 44vw;
+    }
   }
 }
 
@@ -167,41 +175,111 @@
 
 
 
-// @media (min-width: 1024px){/
-//   .newwaveMainText{
-//     font-size: 3rem;
-//     letter-spacing: 46px;
-//     font-weight: 600;
-//     width: 20vw;
-//     height: 10vh;
-// }
+@media (min-width: 1024px){
+  .newwaveMainText{
+    font-size: 3rem;
+    letter-spacing: 46px;
+    font-weight: 600;
+    width: 20vw;
+    height: 10vh;
+}
 
-// }
+}
 
-// @media (min-width: 768px) and (max-width : 1023px){
+@media (min-width: 768px) and (max-width : 1023px){
 
-//   .newwaveMainText{
-//       font-size: 2rem;
-//       letter-spacing: 26px;
-//       font-weight: 600;
-//       width: 20vw;
-//       height: 6vh;
-//   }
-//   .newwaveMainImage{
-//   width: 81vw;
-//   // height: 120vh;
-//   }
-// }
+  .newwaveMainText{
+      font-size: 2rem;
+      letter-spacing: 26px;
+      font-weight: 600;
+      width: 20vw;
+      height: 6vh;
+  }
+  .newwaveMainImage{
+  width: 81vw;
+  // height: 120vh;
+  }
 
-// @media (max-width: 767px){
-//   .newwaveMainText{
-//     width: 20vw;
-//     height: 5vh;
-//     font-size: 1.5rem;
-//     letter-spacing: 15px;
-//     font-weight: 600;
-// }
-// .newwaveMainImage{
-//   width: 60vw;
-//   }
-// }
+  #newWave_color{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+
+    &>div:nth-child(1){
+      width: 80vw;
+      height: 20vh;
+      @include flexCenter(center, flex-end);
+      flex-direction: row;
+      // border: 1px solid red;
+      &>div{
+        width: 14vw;
+        height: 15vh;
+      // border: 1px solid red;
+        &>div:nth-child(1){
+          display: flex;
+          justify-content: center;
+          font-size: 30px;
+        }
+        &>div:nth-child(2){
+          opacity: 0;
+        }
+      }
+    }
+    #colorImage{
+      width: 84vw;
+      height: 50vh;
+      // border: 1px solid blue;
+      &>img{
+        width: 52vw;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px){
+  .newwaveMainText{
+    width: 20vw;
+    height: 5vh;
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+    font-weight: 600;
+}
+#newWave_color{
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+
+  &>div:nth-child(1){
+    width: 80vw;
+    height: 20vh;
+    @include flexCenter(center, flex-end);
+    flex-direction: row;
+    // border: 1px solid red;
+    &>div{
+      width: 14vw;
+      height: 15vh;
+    // border: 1px solid red;
+      &>div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+      }
+      &>div:nth-child(2){
+        opacity: 0;
+      }
+    }
+  }
+  #colorImage{
+    width: 84vw;
+    height: 38vh;
+    // border: 1px solid blue;
+    &>img{
+      width: 52vw;
+    }
+  }
+}
+.newwaveMainImage{
+  width: 60vw;
+  }
+}
